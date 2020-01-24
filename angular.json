@@ -123,6 +123,60 @@
           }
         }
       }
+    },
+    "ui": {
+      "projectType": "library",
+      "root": "libs/ui",
+      "sourceRoot": "libs/ui/src",
+      "prefix": "myworkspace",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/ui/tsconfig.lib.json",
+              "libs/ui/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/ui/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/ui/jest.config.js",
+            "tsConfig": "libs/ui/tsconfig.spec.json",
+            "setupFile": "libs/ui/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {}
+    },
+    "hello-world": {
+      "projectType": "library",
+      "root": "libs/hello-world",
+      "sourceRoot": "libs/hello-world/src",
+      "prefix": "myworkspace",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/hello-world/tsconfig.lib.json",
+              "libs/hello-world/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/hello-world/**"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/hello-world/jest.config.js",
+            "tsConfig": "libs/hello-world/tsconfig.spec.json",
+            "setupFile": "libs/hello-world/src/test-setup.ts"
+          }
+        }
+      },
+      "schematics": {}
     }
   },
   "cli": {

@@ -15,7 +15,10 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@myworkspace/ui": ["libs/ui/src/index.ts"],
+      "@myworkspace/hello-world": ["libs/hello-world/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

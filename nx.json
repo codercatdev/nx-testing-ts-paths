@@ -17,6 +17,12 @@
     "testing-e2e": {
       "tags": [],
       "implicitDependencies": ["testing"]
+    },
+    "ui": {
+      "tags": []
+    },
+    "hello-world": {
+      "tags": []
     }
   }
 }
