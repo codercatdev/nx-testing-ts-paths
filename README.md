@@ -1,12 +1,9 @@
-# hello-world
+# Serve
+Run `ng serve` and you should see hello-world
 
-This library was generated with [Nx](https://nx.dev).
+## Test
+Run `ng test`
 
-## Running unit tests
-
-Attempting to follow https://kulshekhar.github.io/ts-jest/user/config/#the-3-presets for paths
-
-Run `nx test hello-world` to execute the unit tests.
 
 ## Error
 
